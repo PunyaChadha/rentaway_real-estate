@@ -35,7 +35,7 @@ const SearchPage = () => {
 
     const cleanedFilters = cleanParams(initialFilters);
     dispatch(setFilters(cleanedFilters));
-  },[])
+  },[dispatch, searchParams])
 
   return (
     <div className='w-full mx-auto px-5 flex flex-col' style={{height:`calc(100vh - ${NAVBAR_HEIGHT})px`}}>
